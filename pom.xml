@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.qiyao</groupId>
+    <artifactId>yaoyu-frame</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <modules>
+        <module>yaoyu-user</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>aliyun maven</name>
+            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
+            <layout>default</layout>
+            <!--   是否开启发布版构件下载         -->
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <!--   是否开启快照版构件下载         -->
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+
+        </repository>
+    </repositories>
+</project>
+
