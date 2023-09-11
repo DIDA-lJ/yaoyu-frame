@@ -7,22 +7,21 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.qiyao</groupId>
-    <artifactId>yaoyu-user</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>yaoyu-common</artifactId>
+    <packaging>pom</packaging>
 
-    <name>yaoyu-user</name>
+    <name>yaoyu-common</name>
     <url>http://maven.apache.org</url>
+    <modules>
+        <module>yaoyu-common-web</module>
+        <module>yaoyu-common-mybatisplus</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.qiyao</groupId>
-            <artifactId>yaoyu-common-mybatisplus</artifactId>
-            <version>1.0.0</version>
-        </dependency>
+
     </dependencies>
 </project>

@@ -7,7 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="yaoyu-user" />
+        <module name="yaoyu-common-mybatisplus" />
+        <module name="yaoyu-common-web" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="yaoyu-common" options="" />
+      <module name="yaoyu-common-mybatisplus" options="" />
+      <module name="yaoyu-common-web" options="" />
+      <module name="yaoyu-frame" options="" />
+      <module name="yaoyu-user" options="-parameters" />
+    </option>
   </component>
 </project>
