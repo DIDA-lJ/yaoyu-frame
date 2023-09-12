@@ -12,7 +12,8 @@ import lombok.Data;
 @Data
 public class UserReq {
 
-    private int id;
 
     private String name;
+
+    private int age;
 }

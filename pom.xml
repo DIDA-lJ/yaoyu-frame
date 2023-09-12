@@ -31,11 +31,7 @@
     </parent>
 
     <dependencies>
-        <dependency>
-            <groupId>com.qiyao</groupId>
-            <artifactId>yaoyu-common-web</artifactId>
-            <version>1.0.0</version>
-        </dependency>
+
 
 
     </dependencies>

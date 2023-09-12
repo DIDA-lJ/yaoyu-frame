@@ -1,5 +1,6 @@
 package com.qiyao.user.service.impl;
 
+import com.qiyao.config.MybatisConfiguration;
 import com.qiyao.user.entity.dto.UserDTO;
 import com.qiyao.user.entity.po.UserPO;
 import com.qiyao.user.mapper.UserMapper;
@@ -17,13 +18,17 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserServiceImpl implements UserService {
+
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private MybatisConfiguration mybatisConfiguration;
 
     @Override
     public int addUser(UserDTO userDto) {
         UserPO userPO = new UserPO();
-        BeanUtils.copyProperties(userDto,userPO);
+        BeanUtils.copyProperties(userDto, userPO);
         int count = userMapper.insert(userPO);
         return count;
     }
