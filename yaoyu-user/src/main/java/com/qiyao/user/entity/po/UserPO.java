@@ -1,12 +1,10 @@
 package com.qiyao.user.entity.po;
 
-import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.*;
 
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.qiyao.entity.BaseEntity;
 import lombok.Data;
 
-import java.sql.Date;
 
 /**
  * @ClassName UserPO
@@ -17,7 +15,7 @@ import java.sql.Date;
  */
 @Data
 @TableName("user")
-public class UserPO {
+public class UserPO extends BaseEntity {
 
     @TableId(value = "id", type = IdType.ASSIGN_ID)
     private Long id;
@@ -26,17 +24,7 @@ public class UserPO {
 
     private Integer age;
 
-    private String createBy;
 
-    private Date createTime;
-
-    private String updateBy;
-
-    private Date updateTime;
-
-    private Integer deleteFlag;
-
-    private Integer version;
 
 
 }

@@ -1,3 +1,4 @@
 com\qiyao\config\MybatisConfiguration.class
 com\qiyao\handler\MyMetaObjectHandler.class
 com\qiyao\inteceptor\SqlBeautyInterceptor.class
+com\qiyao\entity\BaseEntity.class

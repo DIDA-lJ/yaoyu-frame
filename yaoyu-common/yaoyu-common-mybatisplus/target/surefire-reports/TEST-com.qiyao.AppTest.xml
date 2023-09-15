@@ -5,7 +5,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19.0.1+10-21"/>
     <property name="sun.boot.library.path" value="D:\soft\jdk\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\code\core-project\yaoyu-frame"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\code\core-project\yaoyu-frame\yaoyu-common\yaoyu-common-mybatisplus"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="CN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\code\core-project\yaoyu-frame"/>
+    <property name="user.dir" value="D:\code\core-project\yaoyu-frame\yaoyu-common\yaoyu-common-mybatisplus"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="19.0.1+10-21"/>
     <property name="os.arch" value="amd64"/>

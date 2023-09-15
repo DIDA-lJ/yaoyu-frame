@@ -28,3 +28,6 @@ spring:
           enabled: true
 
 
+sql:
+  beauty:
+    show: false
