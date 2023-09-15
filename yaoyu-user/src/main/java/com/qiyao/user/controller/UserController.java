@@ -1,5 +1,6 @@
 package com.qiyao.user.controller;
 
+import com.qiyao.Result;
 import com.qiyao.user.entity.dto.UserDTO;
 import com.qiyao.user.entity.req.UserReq;
 import com.qiyao.user.service.UserService;
@@ -22,10 +23,9 @@ public class UserController {
     private UserService userService;
 
     @PostMapping
-    public Integer addUser(@RequestBody UserReq userReq) {
+    public Result addUser(@RequestBody UserReq userReq) {
         UserDTO userDTO = new UserDTO();
         BeanUtils.copyProperties(userReq, userDTO);
-        int count = userService.addUser(userDTO);
-        return count;
+        return Result.ok(userService.addUser(userDTO));
     }
 }
