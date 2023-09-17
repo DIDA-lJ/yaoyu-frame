@@ -33,7 +33,6 @@
     <dependencies>
 
 
-
     </dependencies>
 
     <!--    阿里云镜像   -->
@@ -51,6 +50,10 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
+        </repository>
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
         </repository>
     </repositories>
 

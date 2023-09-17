@@ -1,1 +1,3 @@
-com\qiyao\App.class
+com\qiyao\ResultCode.class
+com\qiyao\ResultMessage.class
+com\qiyao\Result.class

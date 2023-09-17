@@ -17,7 +17,7 @@
       <module name="yaoyu-common" options="" />
       <module name="yaoyu-common-mybatisplus" options="" />
       <module name="yaoyu-common-web" options="" />
-      <module name="yaoyu-frame" options="" />
+      <module name="yaoyu-frame" options="-parameters" />
       <module name="yaoyu-user" options="-parameters" />
     </option>
   </component>
