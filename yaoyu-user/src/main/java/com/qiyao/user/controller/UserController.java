@@ -1,7 +1,8 @@
 package com.qiyao.user.controller;
 
 import com.qiyao.bean.Result;
-import com.qiyao.user.entity.dto.UserDTO;
+import com.qiyao.user.entity.dto.UserDto;
+import com.qiyao.user.entity.req.UserListReq;
 import com.qiyao.user.entity.req.UserReq;
 import com.qiyao.user.service.UserService;
 import org.springframework.beans.BeanUtils;
@@ -24,7 +25,7 @@ public class UserController {
 
     @PostMapping
     public Result addUser(@RequestBody UserReq userReq) {
-        UserDTO userDTO = new UserDTO();
+        UserDto userDTO = new UserDto();
         BeanUtils.copyProperties(userReq, userDTO);
         return Result.ok(userService.addUser(userDTO));
     }
@@ -33,5 +34,12 @@ public class UserController {
     public Result delete(@PathVariable Integer id) {
         id = Integer.parseInt("" + id);
         return Result.ok(userService.delete(id));
+    }
+
+    @GetMapping
+    public Result getPage(@RequestBody UserListReq userListReq){
+        UserDto userDto = new UserDto();
+        BeanUtils.copyProperties(userListReq,userDto);
+        return Result.ok(userService.getUserPage(userDto));
     }
 }

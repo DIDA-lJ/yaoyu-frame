@@ -1,7 +1,8 @@
 package com.qiyao.user.service;
 
-import com.qiyao.user.entity.dto.UserDTO;
-import org.springframework.stereotype.Service;
+import com.qiyao.entity.PageResult;
+import com.qiyao.user.entity.dto.UserDto;
+import com.qiyao.user.entity.po.UserPO;
 
 /**
  * controller 与 service 交互 dto
@@ -9,8 +10,11 @@ import org.springframework.stereotype.Service;
  */
 public interface UserService {
 
-    int addUser(UserDTO userDto);
+    int addUser(UserDto userDto);
 
 
     int delete(Integer id);
+
+
+    PageResult<UserPO> getUserPage(UserDto userDto);
 }

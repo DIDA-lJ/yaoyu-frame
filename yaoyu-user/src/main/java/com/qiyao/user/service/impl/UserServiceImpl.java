@@ -1,7 +1,10 @@
 package com.qiyao.user.service.impl;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.qiyao.config.MybatisConfiguration;
-import com.qiyao.user.entity.dto.UserDTO;
+import com.qiyao.entity.PageResult;
+import com.qiyao.user.entity.dto.UserDto;
 import com.qiyao.user.entity.po.UserPO;
 import com.qiyao.user.mapper.UserMapper;
 import com.qiyao.user.service.UserService;
@@ -26,7 +29,7 @@ public class UserServiceImpl implements UserService {
     private MybatisConfiguration mybatisConfiguration;
 
     @Override
-    public int addUser(UserDTO userDto) {
+    public int addUser(UserDto userDto) {
         UserPO userPO = new UserPO();
         BeanUtils.copyProperties(userDto, userPO);
         int count = userMapper.insert(userPO);
@@ -36,5 +39,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public int delete(Integer id) {
         return userMapper.deleteById(id);
+    }
+
+    @Override
+    public PageResult<UserPO> getUserPage(UserDto userDto) {
+        IPage<UserPO> userPOPage = new Page<UserPO>(userDto.getPageIndex(),userDto.getPageSize());
+        IPage<UserPO> userPage = userMapper.getUserPage(userPOPage);
+        PageResult<UserPO> pageResult = new PageResult<UserPO>();
+        pageResult.loadData(userPage);
+        return pageResult;
+
     }
 }

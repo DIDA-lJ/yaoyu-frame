@@ -1,6 +1,7 @@
 package com.qiyao.user.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.qiyao.user.entity.po.UserPO;
 import org.springframework.stereotype.Repository;
 
@@ -13,5 +14,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface UserMapper extends BaseMapper<UserPO> {
-
+    IPage<UserPO> getUserPage(IPage<UserPO> userPOPage);
 }

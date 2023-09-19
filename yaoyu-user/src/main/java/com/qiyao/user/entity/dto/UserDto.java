@@ -1,10 +1,6 @@
 package com.qiyao.user.entity.dto;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
-
-import java.sql.Date;
 
 /**
  * @ClassName UserDTO
@@ -14,10 +10,13 @@ import java.sql.Date;
  * @Author LinQi
  */
 @Data
-public class UserDTO {
+public class UserDto {
 
     private String name;
 
     private Integer age;
 
+    private Integer pageIndex;
+
+    private Integer pageSize;
 }
