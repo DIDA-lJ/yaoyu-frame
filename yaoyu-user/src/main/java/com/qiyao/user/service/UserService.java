@@ -10,4 +10,7 @@ import org.springframework.stereotype.Service;
 public interface UserService {
 
     int addUser(UserDTO userDto);
+
+
+    int delete(Integer id);
 }

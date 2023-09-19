@@ -1,5 +1,8 @@
 package com.qiyao.entity;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -14,16 +17,22 @@ import java.sql.Date;
  */
 @Data
 public class BaseEntity implements Serializable {
+    @TableField(fill = FieldFill.INSERT)
+    private String create_by;
 
-    private String createBy;
+    @TableField(fill = FieldFill.INSERT)
+    private Date create_time;
 
-    private Date createTime;
+    @TableField(fill = FieldFill.UPDATE)
+    private String update_by;
 
-    private String updateBy;
+    @TableField(fill = FieldFill.UPDATE)
+    private Date update_time;
 
-    private Date updateTime;
+    @TableField(fill = FieldFill.INSERT)
+    @TableLogic
+    private Integer delete_flag;
 
-    private Integer deleteFlag;
-
+    @TableField(fill = FieldFill.INSERT)
     private Integer version;
 }

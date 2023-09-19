@@ -1,4 +1,4 @@
-package com.qiyao;
+package com.qiyao.bean;
 
 import lombok.Data;
 
@@ -21,6 +21,8 @@ public class Result<T> implements Serializable {
     private String message;
 
     private T data;
+
+
 
     public static Result ok(Integer resultCode, String message) {
         Result result = new Result();
@@ -72,6 +74,14 @@ public class Result<T> implements Serializable {
         result.setCode(ResultCode.ERROR);
         result.setMessage(ResultMessage.ERROR);
         result.setData(data);
+        return result;
+    }
+
+    public static <T> Result fail() {
+        Result result = new Result();
+        result.setSuccess(true);
+        result.setCode(ResultCode.ERROR);
+        result.setMessage(ResultMessage.ERROR);
         return result;
     }
 }

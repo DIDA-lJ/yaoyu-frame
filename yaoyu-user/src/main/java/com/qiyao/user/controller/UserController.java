@@ -1,6 +1,6 @@
 package com.qiyao.user.controller;
 
-import com.qiyao.Result;
+import com.qiyao.bean.Result;
 import com.qiyao.user.entity.dto.UserDTO;
 import com.qiyao.user.entity.req.UserReq;
 import com.qiyao.user.service.UserService;
@@ -27,5 +27,11 @@ public class UserController {
         UserDTO userDTO = new UserDTO();
         BeanUtils.copyProperties(userReq, userDTO);
         return Result.ok(userService.addUser(userDTO));
+    }
+
+    @DeleteMapping("/{id}")
+    public Result delete(@PathVariable Integer id) {
+        id = Integer.parseInt("" + id);
+        return Result.ok(userService.delete(id));
     }
 }
