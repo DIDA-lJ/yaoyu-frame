@@ -1,4 +1,4 @@
-package com.qiyao;
+package com.qiyao.bean;
 
 /**
  * @ClassName ResultMessage

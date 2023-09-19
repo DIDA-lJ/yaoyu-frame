@@ -1,6 +1,6 @@
 package com.qiyao.user.controller;
 
-import com.qiyao.Result;
+import com.qiyao.bean.Result;
 import com.qiyao.user.entity.dto.UserDTO;
 import com.qiyao.user.entity.req.UserReq;
 import com.qiyao.user.service.UserService;
