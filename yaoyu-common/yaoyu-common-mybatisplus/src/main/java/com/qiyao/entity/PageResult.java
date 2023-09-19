@@ -17,15 +17,29 @@ import java.util.List;
 
 @Data
 public class PageResult<T> implements Serializable {
-
+    /**
+     * 总记录数
+     */
     private Long total;
 
+    /**
+     * 每页的记录数
+     */
     private Long size;
 
+    /**
+     * 当前页数
+     */
     private Long current;
 
+    /**
+     * 总页数
+     */
     private Long pages;
 
+    /**
+     * 数据集合
+     */
     private List<T> records = Collections.emptyList();
 
     public  void loadData(IPage<T> pageData) {
