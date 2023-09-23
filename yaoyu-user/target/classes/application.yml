@@ -1,0 +1,63 @@
+server:
+  port: 7549
+spring:
+  application:
+    name: yaoyu-frame-user
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.10.134:3306/yaoyu-frame?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 20
+      min-idle: 20
+      max-active: 100
+      max-wait: 60000
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        login-username: admin
+        login-password: 123456
+      filter:
+        stat:
+          enabled: true
+          log-slow-sql: true
+          show-sql-millis: 2000
+        wall:
+          enabled: true
+  redis:
+    host: 192.168.10.134
+    password: 123456
+    database: 0
+    lettuce:
+      pool:
+        max-active: 20
+        max-idle: 8
+        max-wait: -1
+        min-idle: 0
+  mvc:
+    path-match:
+      matching-strategy: ant_path_matcher
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      logic-delete-field: deleteFlag
+    banner: false
+  mapper-locations: classpath:mapper/*.xml
+
+swagger:
+  base-package: com.qiyao
+  title: yaoyu-frame
+  contact-name: 柒夭
+  contact-url: https://github.com/DIDA-lJ/yaoyu-frame
+  email: wkw4399xs@gmail.com
+  version: 1.0.0-beta
+  description: 夭语框架，采用从 0 到 1 组件式的开发模式，致力于成为一款优秀的企业级应用应用的轻量脚手架。
+
+
+sql:
+  beauty:
+    show: false

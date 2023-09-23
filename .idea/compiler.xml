@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="yaoyu-user" />
+        <module name="yaoyu-common-redis" />
+        <module name="yaoyu-common-mybatisplus" />
+        <module name="yaoyu-common-web" />
+        <module name="yaoyu-common-swagger" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="yaoyu-common" options="" />
+      <module name="yaoyu-common-mybatisplus" options="-parameters" />
+      <module name="yaoyu-common-redis" options="-parameters" />
+      <module name="yaoyu-common-swagger" options="-parameters" />
+      <module name="yaoyu-common-web" options="-parameters" />
+      <module name="yaoyu-frame" options="" />
+      <module name="yaoyu-user" options="-parameters" />
+    </option>
+  </component>
+</project>

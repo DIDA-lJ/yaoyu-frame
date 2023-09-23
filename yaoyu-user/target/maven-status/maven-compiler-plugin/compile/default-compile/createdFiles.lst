@@ -1,0 +1,10 @@
+com\qiyao\user\UserApplication.class
+com\qiyao\user\service\UserService.class
+com\qiyao\user\controller\TestController.class
+com\qiyao\user\controller\UserController.class
+com\qiyao\user\entity\req\UserReq.class
+com\qiyao\user\entity\dto\UserDto.class
+com\qiyao\user\mapper\UserMapper.class
+com\qiyao\user\service\impl\UserServiceImpl.class
+com\qiyao\user\entity\po\UserPO.class
+com\qiyao\user\entity\req\UserListReq.class
