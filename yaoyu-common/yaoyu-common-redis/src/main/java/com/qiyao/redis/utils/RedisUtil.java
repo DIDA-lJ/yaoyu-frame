@@ -1,17 +1,10 @@
 package com.qiyao.redis.utils;
 
-import com.alibaba.fastjson.JSON;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.ClassPathResource;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.script.DefaultRedisScript;
-import org.springframework.scripting.support.ResourceScriptSource;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
@@ -19,34 +12,18 @@ import java.util.stream.Stream;
 
 /**
  * @ClassName RedisUtil
- * @Description Redis 工具类
+ * @Description Redis工具类
  * @Version 1.0.0
  * @Author LinQi
  * @Date 2023/09/23
  */
 @Component
+@Slf4j
 public class RedisUtil {
 
+    private static final String CACHE_KEY_SEPARATOR = ".";
     @Resource
     private RedisTemplate redisTemplate;
-
-    private static final String CACHE_KEY_SEPARATOR = ".";
-
-    private DefaultRedisScript<Boolean> casScript;
-
-    @PostConstruct
-    public void init() {
-        casScript = new DefaultRedisScript<>();
-        casScript.setResultType(Boolean.class);
-        casScript.setScriptSource(new ResourceScriptSource(new ClassPathResource("compareAndSet.lua")));
-        System.out.println(JSON.toJSON(casScript));
-    }
-
-    public Boolean compareAndSet(String key, Long oldValue, Long newValue) {
-        List<String> keys = new ArrayList();
-        keys.add(key);
-        return (Boolean) redisTemplate.execute(casScript, keys, oldValue, newValue);
-    }
 
     /**
      * 构建缓存key
@@ -116,6 +93,5 @@ public class RedisUtil {
     public Object rank(String key, Object obj) {
         return redisTemplate.opsForZSet().rank(key, obj);
     }
-
 
 }
