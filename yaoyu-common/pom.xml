@@ -19,6 +19,7 @@
         <module>yaoyu-common-mybatisplus</module>
         <module>yaoyu-common-swagger</module>
         <module>yaoyu-common-redis</module>
+        <module>yaoyu-common-log</module>
     </modules>
 
     <properties>
