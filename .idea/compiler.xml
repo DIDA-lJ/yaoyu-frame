@@ -20,7 +20,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="yaoyu-common" options="" />
+      <module name="yaoyu-common" options="-parameters" />
       <module name="yaoyu-common-mybatisplus" options="-parameters" />
       <module name="yaoyu-common-redis" options="-parameters" />
       <module name="yaoyu-common-swagger" options="-parameters" />

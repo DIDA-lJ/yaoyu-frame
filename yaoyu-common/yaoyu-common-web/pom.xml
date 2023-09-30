@@ -3,20 +3,12 @@
     <parent>
         <artifactId>yaoyu-common</artifactId>
         <groupId>com.qiyao</groupId>
-        <version>1.0.0</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>com.qiyao</groupId>
     <artifactId>yaoyu-common-web</artifactId>
-    <version>1.0.0</version>
+    <modelVersion>4.0.0</modelVersion>
 
-    <name>yaoyu-common-web</name>
-    <url>http://maven.apache.org</url>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 
     <dependencies>
 

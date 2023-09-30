@@ -2,12 +2,14 @@ D:\code\core-project\yaoyu-frame\yaoyu-user\src\main\java\com\qiyao\user\entity\
 D:\code\core-project\yaoyu-frame\yaoyu-user\src\main\java\com\qiyao\user\entity\req\UserReq.java
 D:\code\core-project\yaoyu-frame\yaoyu-user\src\main\java\com\qiyao\user\controller\UserController.java
 D:\code\core-project\yaoyu-frame\yaoyu-user\src\main\java\com\qiyao\user\service\UserService.java
+D:\code\core-project\yaoyu-frame\yaoyu-user\src\main\java\com\qiyao\user\cache\SysUserCache.java
 D:\code\core-project\yaoyu-frame\yaoyu-user\src\main\java\com\qiyao\user\controller\SysUserController.java
 D:\code\core-project\yaoyu-frame\yaoyu-user\src\main\java\com\qiyao\user\mapper\UserMapper.java
 D:\code\core-project\yaoyu-frame\yaoyu-user\src\main\java\com\qiyao\user\UserApplication.java
 D:\code\core-project\yaoyu-frame\yaoyu-user\src\main\java\com\qiyao\user\entity\req\UserListReq.java
 D:\code\core-project\yaoyu-frame\yaoyu-user\src\main\java\com\qiyao\user\controller\TestController.java
 D:\code\core-project\yaoyu-frame\yaoyu-user\src\main\java\com\qiyao\user\entity\dto\UserDto.java
+D:\code\core-project\yaoyu-frame\yaoyu-user\src\main\java\com\qiyao\user\cache\CategoryCache.java
 D:\code\core-project\yaoyu-frame\yaoyu-user\src\main\java\com\qiyao\user\convert\SysUserConverter.java
 D:\code\core-project\yaoyu-frame\yaoyu-user\src\main\java\com\qiyao\user\entity\req\SysUserReq.java
 D:\code\core-project\yaoyu-frame\yaoyu-user\src\main\java\com\qiyao\user\service\impl\UserServiceImpl.java
