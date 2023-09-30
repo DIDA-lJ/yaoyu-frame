@@ -13,6 +13,10 @@
         <module name="yaoyu-common-swagger" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="yaoyu-common-log" target="19" />
+      <module name="yaoyu-common-starter" target="19" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

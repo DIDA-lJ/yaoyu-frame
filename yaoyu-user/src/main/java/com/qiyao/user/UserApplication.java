@@ -5,6 +5,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
+import java.util.HashMap;
+
 
 /**
  * @ClassName UserApplication
@@ -17,7 +19,6 @@ import org.springframework.context.annotation.ComponentScan;
 @MapperScan(value = "com.qiyao.*.mapper")
 @ComponentScan(value = "com.qiyao")
 public class UserApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(UserApplication.class);
     }
