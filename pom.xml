@@ -13,15 +13,10 @@
     <modules>
         <module>yaoyu-user</module>
         <module>yaoyu-common</module>
+        <module>yaoyu-dependencies</module>
     </modules>
 
-    <properties>
-        <java.version>19</java.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.plugin.version>3.10.1</maven.plugin.version>
-        <maven.compile.version>19</maven.compile.version>
-        <maven.compile.target>19</maven.compile.target>
-    </properties>
+
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -34,53 +29,9 @@
 
     </dependencies>
 
-    <!--    阿里云镜像   -->
-    <repositories>
-        <repository>
-            <id>central</id>
-            <name>aliyun maven</name>
-            <url>https://maven.aliyun.com/nexus/content/groups/public/</url>
-            <layout>default</layout>
-            <!--   是否开启发布版构件下载         -->
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <!--   是否开启快照版构件下载         -->
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>spring-releases</id>
-            <url>https://repo.spring.io/libs-release</url>
-        </repository>
-    </repositories>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven.plugin.version}</version>
-                <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compile.target}</target>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-        </plugins>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-            </resource>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.xml</include>
-                </includes>
-            </resource>
-        </resources>
-    </build>
+
+
 
 </project>
 
