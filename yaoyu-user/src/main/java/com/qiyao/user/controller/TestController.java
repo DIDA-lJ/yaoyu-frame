@@ -1,5 +1,6 @@
 package com.qiyao.user.controller;
 
+import com.qiyao.redis.utils.RedisShareLockUtil;
 import com.qiyao.redis.utils.RedisUtil;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,14 +20,23 @@ public class TestController {
     @Autowired
     private RedisUtil redisUtil;
 
+    @Autowired
+    private RedisShareLockUtil redisShareLockUtil;
+
     @GetMapping("/helloTest")
-    public String HelloTest(){
+    public String HelloTest() {
         return "Hello, welcome to use Yao language to quickly develop scaffolding.";
     }
 
     @GetMapping("/redisTest")
-    public void redisTest(){
-        redisUtil.set("name","qiyao");
+    public void redisTest() {
+        redisUtil.set("name", "qiyao");
 
+    }
+
+    @GetMapping("/redisLockTest")
+    public void testRedisLock() {
+        boolean flag = redisShareLockUtil.lock("黑马程序员", "123456", 100000L);
+        System.out.println(flag);
     }
 }
