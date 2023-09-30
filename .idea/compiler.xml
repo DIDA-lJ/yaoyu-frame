@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="yaoyu-common-starter" />
         <module name="yaoyu-user" />
-        <module name="yaoyu-common-redis" />
-        <module name="yaoyu-common-mybatisplus" />
         <module name="yaoyu-common-web" />
         <module name="yaoyu-common-swagger" />
+        <module name="yaoyu-common-starter" />
+        <module name="yaoyu-common-redis" />
+        <module name="yaoyu-common-mybatisplus" />
+        <module name="yaoyu-common-log4j" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

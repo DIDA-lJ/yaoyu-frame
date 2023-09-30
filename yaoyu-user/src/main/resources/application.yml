@@ -61,3 +61,5 @@ swagger:
 sql:
   beauty:
     show: false
+logging:
+  config: classpath:log4j-spring.xml
