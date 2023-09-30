@@ -8,6 +8,7 @@ import com.qiyao.user.entity.req.SysUserReq;
 import com.qiyao.user.mapper.SysUserDao;
 import com.qiyao.user.service.SysUserService;
 import org.springframework.beans.BeanUtils;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 
@@ -32,6 +33,7 @@ public class SysUserServiceImpl implements SysUserService {
      * @return 实例对象
      */
     @Override
+    @Cacheable(cacheNames = "sysUser", key = " 'queryById' + #id")
     public SysUser queryById(Long id) {
         return this.sysUserDao.queryById(id);
     }

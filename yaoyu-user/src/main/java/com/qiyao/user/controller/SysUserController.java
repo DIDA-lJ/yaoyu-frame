@@ -8,6 +8,7 @@ import com.qiyao.user.service.SysUserService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
