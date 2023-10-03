@@ -39,6 +39,7 @@
         <disruptor.version>3.4.2</disruptor.version>
         <mapstruct.version>1.4.2.Final</mapstruct.version>
         <hutool.version>5.8.12</hutool.version>
+
     </properties>
 
     <dependencyManagement>
@@ -145,6 +146,12 @@
                 <groupId>org.mapstruct</groupId>
                 <artifactId>mapstruct-processor</artifactId>
                 <version>${mapstruct.version}</version>
+            </dependency>
+            <!-- 异步日志(引入高性能队列) -->
+            <dependency>
+                <groupId>com.lmax</groupId>
+                <artifactId>disruptor</artifactId>
+                <version>${disruptor.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
