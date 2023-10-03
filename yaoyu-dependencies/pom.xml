@@ -33,13 +33,15 @@
         <jackson.databind.version>2.13.3</jackson.databind.version>
         <commons.lang.version>2.6</commons.lang.version>
         <spring.boot.jdbc.version>3.0.4</spring.boot.jdbc.version>
+        <spring.boot.aop.version>2.7.1</spring.boot.aop.version>
         <spring.boot.druid.version>1.2.18</spring.boot.druid.version>
         <mysql.connector.version>8.0.33</mysql.connector.version>
         <spring.boot.mybatis.version>3.5.3.1</spring.boot.mybatis.version>
         <disruptor.version>3.4.2</disruptor.version>
         <mapstruct.version>1.4.2.Final</mapstruct.version>
         <hutool.version>5.8.12</hutool.version>
-
+        <gson.version>2.10.1</gson.version>
+        <springfox.version>3.0.0</springfox.version>
     </properties>
 
     <dependencyManagement>
@@ -147,11 +149,20 @@
                 <artifactId>mapstruct-processor</artifactId>
                 <version>${mapstruct.version}</version>
             </dependency>
-            <!-- 异步日志(引入高性能队列) -->
             <dependency>
-                <groupId>com.lmax</groupId>
-                <artifactId>disruptor</artifactId>
-                <version>${disruptor.version}</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-aop</artifactId>
+                <version>${spring.boot.aop.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${gson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>${springfox.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
