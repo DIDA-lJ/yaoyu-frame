@@ -1,6 +1,9 @@
 server:
   port: 7549
 spring:
+  output:
+    ansi:
+      enabled: detect
   application:
     name: yaoyu-frame-user
   datasource:

@@ -27,12 +27,22 @@
         <dependencies>
             <dependency>
                 <groupId>com.qiyao</groupId>
+                <artifactId>yaoyu-common-log4j</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.qiyao</groupId>
                 <artifactId>yaoyu-common-mybatisplus</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.qiyao</groupId>
                 <artifactId>yaoyu-common-redis</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.qiyao</groupId>
+                <artifactId>yaoyu-common-starter</artifactId>
                 <version>1.0.0-SNAPSHOT</version>
             </dependency>
             <dependency>

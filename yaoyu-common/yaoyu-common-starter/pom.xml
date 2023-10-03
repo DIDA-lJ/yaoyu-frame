@@ -10,6 +10,11 @@
     <artifactId>yaoyu-common-starter</artifactId>
 
     <dependencies>
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <version>${spring.boot.starter.version}</version>
+            <type>pom</type>
+        </dependency>
     </dependencies>
 </project>

@@ -1,5 +1,7 @@
 package com.qiyao;
 
+import java.util.HashMap;
+
 /**
  * Hello world!
  *

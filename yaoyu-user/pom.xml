@@ -3,7 +3,7 @@
     <parent>
         <artifactId>yaoyu-frame</artifactId>
         <groupId>com.qiyao</groupId>
-        <version>1.0.0</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -16,23 +16,24 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <yaoyu.common.version>1.0.0-SNAPSHOT</yaoyu.common.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.qiyao</groupId>
             <artifactId>yaoyu-common-log4j</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${yaoyu.common.version}</version>
         </dependency>
         <dependency>
             <groupId>com.qiyao</groupId>
             <artifactId>yaoyu-common-starter</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${yaoyu.common.version}</version>
         </dependency>
         <dependency>
             <groupId>com.qiyao</groupId>
             <artifactId>yaoyu-common-redis</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${yaoyu.common.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>spring-boot-starter-logging</artifactId>
@@ -43,7 +44,7 @@
         <dependency>
             <groupId>com.qiyao</groupId>
             <artifactId>yaoyu-common-swagger</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${yaoyu.common.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>slf4j-api</artifactId>
@@ -58,12 +59,12 @@
         <dependency>
             <groupId>com.qiyao</groupId>
             <artifactId>yaoyu-common-mybatisplus</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${yaoyu.common.version}</version>
         </dependency>
         <dependency>
             <groupId>com.qiyao</groupId>
             <artifactId>yaoyu-common-web</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${yaoyu.common.version}</version>
         </dependency>
         <dependency>
             <groupId>org.mapstruct</groupId>
