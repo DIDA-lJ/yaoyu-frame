@@ -66,3 +66,6 @@ sql:
     show: false
 logging:
   config: classpath:log4j-spring.xml
+log:
+  aspect:
+    enabled: true
