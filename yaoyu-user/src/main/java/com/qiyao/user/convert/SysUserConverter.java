@@ -2,8 +2,7 @@ package com.qiyao.user.convert;
 
 import com.qiyao.user.entity.po.SysUser;
 import com.qiyao.user.entity.req.SysUserReq;
-import org.apache.ibatis.annotations.Mapper;
-import org.mapstruct.Mapping;
+import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 /**
