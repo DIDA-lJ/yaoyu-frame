@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 @Slf4j
-@ConditionalOnProperty(name = "{log.aspect.enabled}", havingValue = "true", matchIfMissing = true)
+@ConditionalOnProperty(name = "{log.aspect.enable}", havingValue = "true", matchIfMissing = true)
 public class LogAspect {
     /**
      * 日志切入点
@@ -30,11 +30,18 @@ public class LogAspect {
     private void pointCut() {
     }
 
-    @Around(("pointCut()"))
-    private void around(ProceedingJoinPoint pjp) {
-        // 获取到参数数组
+    @Around("pointCut()")
+    public Object around(ProceedingJoinPoint pjp) throws Throwable {
         Object[] reqArgs = pjp.getArgs();
         String req = new Gson().toJson(reqArgs);
         MethodSignature methodSignature = (MethodSignature) pjp.getSignature();
+        String methodName = methodSignature.getDeclaringType().getName() + "." + methodSignature.getName();
+        log.info("{},req:{}", methodName, req);
+        Long startTime = System.currentTimeMillis();
+        Object responseObj = pjp.proceed();
+        String resp = new Gson().toJson(responseObj);
+        Long endTime = System.currentTimeMillis();
+        log.info("{},response:{},costTime:{}", methodName, resp, endTime - startTime);
+        return responseObj;
     }
 }

@@ -64,8 +64,8 @@ swagger:
 sql:
   beauty:
     show: false
-logging:
-  config: classpath:log4j-spring.xml
+#logging:
+#  config: classpath:log4j-spring.xml
 log:
   aspect:
-    enabled: true
+    enable: true

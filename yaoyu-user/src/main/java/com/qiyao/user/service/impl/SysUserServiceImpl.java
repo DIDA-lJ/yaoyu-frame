@@ -1,13 +1,11 @@
 package com.qiyao.user.service.impl;
 
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.qiyao.bean.PageResponse;
 import com.qiyao.user.convert.SysUserConverter;
 import com.qiyao.user.entity.po.SysUser;
 import com.qiyao.user.entity.req.SysUserReq;
 import com.qiyao.user.mapper.SysUserDao;
 import com.qiyao.user.service.SysUserService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 

@@ -22,7 +22,7 @@
         <maven.compile.source>19</maven.compile.source>
         <maven.compile.target>19</maven.compile.target>
         <spring.boot.web.version>2.7.1</spring.boot.web.version>
-        <lombok.version>1.18.28</lombok.version>
+        <lombok.version>1.18.24</lombok.version>
         <swagger.ui.version>3.0.0</swagger.ui.version>
         <swagger.version>3.0.0</swagger.version>
         <spring.boot.autoconfigure.version>2.7.1</spring.boot.autoconfigure.version>
