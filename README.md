@@ -5,14 +5,16 @@
 比如用户需要redis，则选择redis组件，需要websocket，则引入websocket组件，用户自身不需要再开发什么，只需要按照组件规则进行使用即可。
 项目整体采用maven结构开发，封装了大量的模块，彼此解耦。满足用户日常开发需要。
 <h3>🗨 yaoyu-common</h3>
-yaoyu-common-job：分布式任务调度组件
-yaoyu-common-log：日志组件，提供日志切面自动记录及异步日志提升性能
-yaoyu-common-mybatisplus：采用Mybatisplus作为与数据库交互
-yaoyu-common-redis：缓存组件，提供基于redis的操作封装，redis分布式锁，guava的cache工具类
-yaoyu-common-starter：启动类组件，与启动类相关的功能，放到此组件处，目前包含mongoStarter
-yaoyu-common-swagger：swagger组件，提供整体项目访问api的入口及方法文档
-yaoyu-common-test：测试组件，集成springboot-test，及代码单元测试，代码覆盖率，行覆盖率检测
-yaoyu-common-tool：常用的工具类组件，满足业务日常开发的各种需要，保障安全性，低入侵性
-yaoyu-common-web：web组件，提供统一异常处理，web模块转换，统一返回值
-yaoyu-common-websocket：websocket组件，提供一套带鉴权的websocket，引入即用，简单方便
-yaoyu-mail：邮件发送组件
+<ul>
+<li>yaoyu-common-job：分布式任务调度组件</li>
+<li>yaoyu-common-log：日志组件，提供日志切面自动记录及异步日志提升性能</li>
+<li>yaoyu-common-mybatisplus：采用Mybatisplus作为与数据库交互</li>
+<li>yaoyu-common-redis：缓存组件，提供基于redis的操作封装，redis分布式锁，guava的cache工具类</li>
+<li>yaoyu-common-starter：启动类组件，与启动类相关的功能，放到此组件处，目前包含mongoStarter</li>
+<li>yaoyu-common-swagger：swagger组件，提供整体项目访问api的入口及方法文档</li>
+<li>yaoyu-common-test：测试组件，集成springboot-test，及代码单元测试，代码覆盖率，行覆盖率检测</li>
+<li>yaoyu-common-tool：常用的工具类组件，满足业务日常开发的各种需要，保障安全性，低入侵性</li>
+<li>yaoyu-common-web：web组件，提供统一异常处理，web模块转换，统一返回值</li>
+<li>yaoyu-common-websocket：websocket组件，提供一套带鉴权的websocket，引入即用，简单方便</li>
+<li>yaoyu-common-mail：邮件发送组件</li>
+</ul>
