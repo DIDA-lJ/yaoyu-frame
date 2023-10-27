@@ -1,5 +1,5 @@
 server:
-  port: 7549
+  port: 8091
 spring:
   output:
     ansi:
@@ -8,8 +8,8 @@ spring:
     name: yaoyu-frame-user
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.10.134:3306/yaoyu-frame?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
-    username: root
+    url: jdbc:mysql://192.168.88.101:3306/yaoyu-frame?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: hlj
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
@@ -30,7 +30,7 @@ spring:
         wall:
           enabled: true
   redis:
-    host: 192.168.10.134
+    host: 192.168.88.101
     password: 123456
     database: 0
     lettuce:
