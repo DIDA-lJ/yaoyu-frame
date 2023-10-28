@@ -18,5 +18,6 @@
 <li>yaoyu-common-websocket：websocket组件，提供一套带鉴权的websocket，引入即用，简单方便</li>
 <li>yaoyu-common-mail：邮件发送组件</li>
 </ul>
-# yaoyu-frame
-夭语框架，致力于做一款好的轻量级脚手架，采用组件化开发模式，使得用户可根据自身情况选择组件来进行使用，致力于高层为一款适用于中小企业的轻量级快速开发框架，里面涵盖了大量平时业务开发的常用场景，目标是实现可以开箱即用。
+
+<h3>🌱yaoyu-dependencies</h3>
+该模块为一个父pom模块，提供项目整体的maven包的锁定及规范，统一升级，统一引入。
