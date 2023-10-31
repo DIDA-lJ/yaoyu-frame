@@ -21,3 +21,6 @@
 
 <h3>🌱yaoyu-dependencies</h3>
 该模块为一个父pom模块，提供项目整体的maven包的锁定及规范，统一升级，统一引入。
+
+<h3>👯yaoyu-user</h3>
+该模块是一个测试模块，用于用户测试
